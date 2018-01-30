@@ -147,7 +147,7 @@ class App extends React.Component {
       case '`': {
         const isCode = change.value.blocks.some(block => block.type == 'code')
         event.preventDefault()
-        value.setBlock(isCode ? 'paragraph' : 'code')
+        change.setBlock(isCode ? 'paragraph' : 'code')
         return true
       }
     }
